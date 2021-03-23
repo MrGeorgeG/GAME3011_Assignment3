@@ -238,9 +238,9 @@ MonoBehaviour:
   gameManager: {fileID: 1357357099}
   hud: {fileID: 3739874003070830255}
   Score1Star: 5000
-  Score2Star: 8000
-  Score3Star: 10000
-  numMoves: 15
+  Score2Star: 7000
+  Score3Star: 9000
+  timeInSeconds: 60
   targetScore: 5000
 --- !u!4 &534209796
 Transform:

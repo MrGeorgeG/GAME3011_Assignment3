@@ -4,37 +4,44 @@ using UnityEngine;
 
 public class LevelMoves : Level
 {
-    public int numMoves;
+    public int timeInSeconds;
     public int targetScore;
 
-    private int movesUsed = 0;
+    private float timer;
+    private bool timeOut = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        type = LevelType.MOVES;
+        type = LevelType.TIMER;
 
         hud.SetLevelType(type);
         hud.SetScore(currentScore);
         hud.SetTarget(targetScore);
-        hud.SetRemaining(numMoves);
+        hud.SetRemaining(string.Format("{0}:{1:00}", timeInSeconds / 60, timeInSeconds % 60));
+
     }
 
-    public override void OnMove()
+    void Update()
     {
-        movesUsed++;
-
-        hud.SetRemaining(numMoves - movesUsed);
-
-        if(numMoves - movesUsed == 0)
+        if (!timeOut)
         {
-            if(currentScore >= targetScore)
+            timer += Time.deltaTime;
+            hud.SetRemaining(string.Format("{0}:{1:00}", (int)Mathf.Max((timeInSeconds - timer) / 60, 0), (int)Mathf.Max((timeInSeconds - timer) % 60, 0)));
+
+            if (timeInSeconds - timer <= 0)
             {
-                GameWin();
-            }
-            else
-            {
-                GameLose();
+                if (currentScore >= targetScore)
+                {
+                    GameWin();
+                }
+                else
+                {
+                    GameLose();
+                }
+
+                timeOut = true;
+
             }
         }
     }

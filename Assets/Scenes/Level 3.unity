@@ -238,9 +238,9 @@ MonoBehaviour:
   gameManager: {fileID: 1357357099}
   hud: {fileID: 2297354243323947134}
   Score1Star: 650
-  Score2Star: 5000
-  Score3Star: 8000
-  timeInSeconds: 90
+  Score2Star: 8500
+  Score3Star: 10000
+  timeInSeconds: 120
   obstacleTypes: 02000000
 --- !u!4 &534209796
 Transform:

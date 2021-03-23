@@ -237,11 +237,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1357357099}
   hud: {fileID: 1179952408}
-  Score1Star: 5000
-  Score2Star: 6500
-  Score3Star: 7500
+  Score1Star: 6000
+  Score2Star: 8000
+  Score3Star: 10000
   timeInSeconds: 90
-  targetScore: 5000
+  targetScore: 6000
 --- !u!4 &534209796
 Transform:
   m_ObjectHideFlags: 0
