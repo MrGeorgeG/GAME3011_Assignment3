@@ -476,7 +476,19 @@ MonoBehaviour:
   - type: 5
     prefab: {fileID: 1160135766151904, guid: ca3c52ce007041649810d8b4f22da1ef, type: 3}
   gridPrefab: {fileID: 1658711361239572, guid: 8087ff5ed1da58f438a530f9751a7852, type: 3}
-  initialSweets: []
+  initialSweets:
+  - type: 2
+    x: 0
+    y: 0
+  - type: 2
+    x: 0
+    y: 7
+  - type: 2
+    x: 7
+    y: 0
+  - type: 2
+    x: 7
+    y: 7
 --- !u!4 &1357357100
 Transform:
   m_ObjectHideFlags: 0
