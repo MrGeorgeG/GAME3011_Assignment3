@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: b31b1a2ec3a5fa4488e1a9d438a9d3f0
@@ -20,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: e8f8a3cb9878da745b2dbf6f4cbf2b6d
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 3a3a4a5558b2e8847b8260035a685961, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 07ad4f9a13b0d6a45bafaa5535bf4426, type: 2}
+  m_UseUCBPForAssetBundles: 0
